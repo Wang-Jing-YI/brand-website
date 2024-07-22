@@ -1,3 +1,150 @@
-p {
-  color: brown;
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Bruno Ace SC";
+  line-height: 1.5;
+}
+
+.h1 {
+  font-size: 128px;
+  text-align: right;
+  color: #00ffa3;
+}
+.h2 {
+  font-size: 64px;
+  display: inline;
+}
+.fs-1 {
+  font-size: 32px;
+}
+.fs-2 {
+  font-size: 24px;
+}
+.fs-3 {
+  font-size: 20px;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+.padding-top-36 {
+  padding-top: 36px;
+}
+.padding-top-16 {
+  padding-top: 16px;
+}
+.padding-40 {
+  padding: 40px 0px;
+}
+.padding-96 {
+  padding: 96px 0px;
+}
+.padding-160 {
+  padding: 160px 0;
+}
+.padding-right-24 {
+  padding-right: 24px;
+}
+.btn {
+  display: inline-block;
+  border-radius: 32px;
+  padding: 12px 24px;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+}
+.btn-black {
+  background-color: black;
+  color: white;
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.f-column {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.nav a {
+  color: white;
+}
+
+.btn-1 img {
+  padding-left: 4px;
+}
+.intro {
+  color: white;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+}
+.gutter {
+  padding: 0px 12px;
+}
+
+.gutter-row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.intro p {
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+.about-list {
+  width: 636px;
+  gap: 24px;
+}
+.about-list li {
+  width: 48%;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.08);
+  padding: 16px;
+}
+.about {
+  width: 526px;
+}
+.half {
+  width: 50%;
+}
+.contact {
+  color: #ffff;
+  background: linear-gradient(#050014 0%, rgb(1, 2, 30, 0.89) 100%);
+}
+.icon {
+  gap: 20px;
+}
+.projects-header .h2 {
+  width: 746px;
+}
+.margin-top {
+  margin-top: auto;
+}
+.footer {
+  background-color: black;
+}
+.footer p {
+  text-align: center;
+  color: white;
 }
