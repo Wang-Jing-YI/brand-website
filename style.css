@@ -135,6 +135,10 @@ body {
 .icon {
   gap: 20px;
 }
+.icon img:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+  border-radius: 40px;
+}
 .projects-header .h2 {
   width: 746px;
 }
