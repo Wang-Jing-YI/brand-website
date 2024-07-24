@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 a {
@@ -55,14 +57,34 @@ body {
   display: inline-block;
   border-radius: 32px;
   padding: 12px 24px;
+  max-width: 100%;
 }
 .btn-white {
   background-color: white;
+  border: 1px solid white;
   color: black;
+  transition: 0.3s;
 }
 .btn-black {
   background-color: black;
+  border: 1px solid black;
   color: white;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
+  img {
+    filter: invert(100%);
+  }
+  background-color: black;
+  color: white;
+}
+.btn-black:hover {
+  img {
+    filter: invert(100%);
+  }
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .container {
   max-width: 1296px;
@@ -93,7 +115,7 @@ body {
   color: white;
 }
 
-.btn-1 img {
+.btn img {
   padding-left: 4px;
 }
 .intro {
@@ -125,9 +147,7 @@ body {
 .about {
   width: 526px;
 }
-.half {
-  width: 50%;
-}
+
 .contact {
   color: #ffff;
   background: linear-gradient(#050014 0%, rgb(1, 2, 30, 0.89) 100%);
@@ -135,6 +155,12 @@ body {
 .icon {
   gap: 20px;
 }
+
+.icon img {
+  transition: 0.3s;
+  border-radius: 40px;
+}
+
 .icon img:hover {
   box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
   border-radius: 40px;
